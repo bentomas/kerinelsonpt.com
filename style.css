@@ -1,0 +1,150 @@
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  margin: 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+a {
+  color: #B70040;
+}
+
+#contactme {
+  background: #FF73A4;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contactme li {
+  display: inline-block;
+  padding: 0 .75em;
+}
+#contactme li span:first-child {
+  display: inline-block;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: bold;
+  margin-right: .1em;
+  position: relative;
+  top: -1px;
+}
+#contactme li:hover {
+  background: #FFC8DB;
+}
+#contactme a {
+  color: black;
+}
+
+#main {
+  flex: 1 0 auto;
+}
+
+#photos {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0 0;
+  display: flex;
+  width: 100%;
+  flex: 0 0 auto;
+}
+#photos li {
+}
+#photos li img {
+  width: 100%;
+  display: block;
+}
+
+#header {
+  max-width: 700px;
+  margin: 50px auto 30px;
+}
+#header h1 {
+  /* color: #333; */
+  padding: 0;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 5px;
+}
+#header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#header li {
+  display: inline-block;
+  padding: 10px;
+}
+#header li a {
+  color: #333;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+#header li a:hover,
+#header li a.selected {
+  border-bottom: 1px solid;
+}
+#header li a:hover {
+  color: black;
+}
+
+h2, p {
+  max-width: 700px;
+  margin: 1.5em auto;
+}
+
+p {
+  line-height: 1.5em;
+  padding: 0 1em;
+}
+
+#headshot {
+  height: 13.5em;
+  margin-right: .7em;
+  float: left;
+}
+
+@media screen and (max-width: 420px) {
+  #contactme {
+    padding: 0.4em 0;
+    line-height: 1.5em;
+  }
+  #header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #header h1 {
+    font-size: 1.4em;
+    margin: 0 0 4px;
+  }
+  #header li {
+    padding: 5px;
+  }
+  #header li a {
+    font-size: 0.9em;
+  }
+
+  #photos {
+    margin: 0;
+  }
+  #photos li {
+    display: none;
+  }
+  #photos li:nth-child(1),
+  #photos li:nth-child(2) {
+    display: inherit;
+  }
+}
